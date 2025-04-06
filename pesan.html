@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanNdry/Pesan-sekarang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pesan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-logo">
+                <img src="img/Logo.png" alt="logo">
+            </div>
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="http://127.0.0.1:3000/laundryuts.html">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#order">order</a></li>
+                    <li><a href="#">About us</a></li>  
+                </ul>
+            </div>
+            <button id="btn-menu"><i class="fa-solid fa-bars Menuside"></i></button>
+        </nav>
+    </header>
+    <div class="toggle-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#order">order</a></li>
+            <li><a href="#">About us</a></li>  
+        </ul>
+    </div>
+    <main>
+        <div class="container">
+            <div class="img-product">
+                <img src="img/cuci'.jpeg" id="img-product">
+                <h3 id="title-product">cuci baju</h3>
+            </div>
+            <div class="pesan">
+                <H1>Pesan sekarang</H1>
+                <form name="pesan">
+                  <input type="text" placeholder="Nama" id="nama">  
+                  <input type="text" placeholder="No HP" id="Nohp">
+                  <textarea name="pesan" placeholder="Alamat" rows="7" cols="45" id="alamat"></textarea>
+                </form>
+                <div class="btn-pesan">
+                    <button type="submit" id="aneh" class="button2" onclick="contact()">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+        <h1 id="output" ></h1>
+    </main>
+    <script src="main.js"></script>
+    <script src="value.js"></script>
+</body>
+</html>

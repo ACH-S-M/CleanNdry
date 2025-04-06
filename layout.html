@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar layout</title>
+    <style>
+        body {
+        margin: 0;
+        }
+            .container {
+              display: flex;
+             
+              width: 100vw;
+              border: solid 4px black;
+              padding: 20px;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              box-sizing: border-box;
+                & .item  {
+                  width: 200px;
+                  min-width: 150px;
+                  height: 200px;
+                  display: flex;
+                  padding: 20px;
+                  justify-content: center;
+                  align-items: center;
+                   
+                }
+                & .item:nth-child(1) {
+                order: 1;
+                color: white;
+                  background-color: red;
+                }
+                & .item:nth-child(2) {
+                order: 2;
+                color: rgb(0, 0, 0);
+                  background-color:yellow;
+                }
+                & .item:nth-child(3) {
+                    order: 3;
+                color: white;
+                  background-color: green;
+                }
+                & .item:nth-child(4) {
+                    order: 4;
+                color: white;
+                  background-color:blue;
+                }
+             
+            }
+    </style>
+</head>
+<body>
+    <!-- iinii komentarr -->
+    <!-- Belajar flex -->
+    <!-- Flexible Box -->
+     <!-- yang pertama Bikin container dulu -->
+      <h1>ini Flex</h1>
+      <div class="container">
+        <div class="item">Ini anak pertama (merah)</div> <!--ini bakal jadi warna merah-->
+        <div class="item">Ini anak kedua (kuning)</div>
+        <div class="item">Ini anak ketiga (hijau)</div>
+        <div class="item">Ini anak keempat (biru)</div>
+      </div>
+      <h1>Ini grid</h1>
+</body>
+</html>
